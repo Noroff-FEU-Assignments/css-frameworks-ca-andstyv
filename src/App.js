@@ -1,8 +1,7 @@
 import "./sass/style.scss";
-import Nav from "./components/Nav";
 
 function App() {
-  return <Nav />;
+  return <div className="App"></div>;
 }
 
 export default App;
