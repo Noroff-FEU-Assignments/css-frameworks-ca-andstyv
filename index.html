@@ -18,9 +18,9 @@
   </head>
   <body>
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">The YAY Company</a>
+    <nav class="nav navbar navbar-expand-lg navbar-light">
+      <div class="nav__container container py-2">
+        <a class="nav__brand navbar-brand pe-4" href="#">The YAY Company</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,20 +33,20 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center gap-2">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav__link nav__link--active nav-link px-3" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
+              <a class="nav__link nav-link" href="#">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav__link nav-link" href="#">Contact</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-0 border-0" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success ml-0" type="submit">Go</button>
+          <form class="nav__form d-flex">
+            <input class="nav__search form-control me-0 border-0" type="search" placeholder="Search" aria-label="Search" />
+            <button class="nav__btn btn btn-outline-success ml-0" type="submit">Go</button>
           </form>
         </div>
       </div>
@@ -80,38 +80,68 @@
     </div>
     <!-- HEADING AND TEXT  -->
     <section style="min-height: 75vh">
-      <div class="container my-5">
-        <h1>We do YAY things</h1>
-        <p>
+      <div class="home container my-5">
+        <h1 class="home__title py-2">We do YAY things</h1>
+        <p class="home__para">
           Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend finibus et ac orci. Aliquam metus massa, aliquam
           quis arcu sit amet, consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus a, varius eget massa.
         </p>
       </div>
       <!-- MAIN TABS -->
-      <div class="container mt-5">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <div class="tabs container mt-5">
+        <ul class="tabs__nav nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="first" aria-selected="true">First</button>
+            <button class="tabs__link tabs__link--active nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+              Home
+            </button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Second</a>
+          <li class="nav-item" role="presentation">
+            <button class="tabs__link nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Third</a>
+          <li class="nav-item" role="presentation">
+            <button class="tabs__link nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
           </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active pb-2" id="first" role="tabpanel" aria-labelledby="first-tab">
+        <div class="tabs__content tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="row p-5">
-              <div class="col-2">
+              <div class="col-3">
                 <img src="./images/tab/tab-1.jpg" alt="" class="img-fluid" />
               </div>
-              <div class="col-10 d-flex flex-column justify-content-between">
-                <p>
+              <div class="col-9 d-flex flex-column justify-content-between">
+                <p class="tabs__para">
                   Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
                   maximus. Sed condimentum mattis rhoncus.
                 </p>
-                <div class="pb-2">SHARE F TW</div>
+                <div class="tabs__share d-flex align-items-center gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row p-5">
+              <div class="col-3">
+                <img src="./images/tab/tab-2.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="col-9 d-flex flex-column justify-content-between">
+                <p class="tabs__para">
+                  Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                  maximus. Sed condimentum mattis rhoncus.
+                </p>
+                <div class="tabs__share d-flex align-items-center gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="row p-5">
+              <div class="col-3">
+                <img src="./images/tab/tab-3.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="col-9 d-flex flex-column justify-content-between">
+                <p class="tabs__para">
+                  Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                  maximus. Sed condimentum mattis rhoncus.
+                </p>
+                <div class="tabs__share d-flex align-items-center gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
               </div>
             </div>
           </div>
@@ -131,5 +161,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/35dab5c0f5.js" crossorigin="anonymous"></script>
   </body>
 </html>

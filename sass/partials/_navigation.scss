@@ -1,0 +1,33 @@
+.nav {
+  background-color: $color-nav;
+  font-size: 16px;
+
+  &__brand {
+    color: $color-font-pink !important;
+    font-size: 20px;
+    font-family: $font-primary;
+    font-weight: 700;
+    font-style: italic;
+  }
+  &__link {
+    color: $color-font-black !important;
+
+    &--active {
+      background-color: $color-white !important;
+      border-radius: 3px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+  }
+  &__search {
+    border: none;
+    border-radius: 4px 0 0 4px;
+    color: $color-font-gray;
+  }
+  &__btn {
+    background-color: $color-font-pink;
+    color: $color-white;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+  }
+}
