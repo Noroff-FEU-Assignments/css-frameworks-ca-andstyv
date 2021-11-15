@@ -1,0 +1,24 @@
+title {
+  font-size: 12px;
+}
+
+body {
+  background: radial-gradient(#ffffff, #e5e5e5);
+}
+
+h1 {
+  color: #e92569;
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab-content {
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

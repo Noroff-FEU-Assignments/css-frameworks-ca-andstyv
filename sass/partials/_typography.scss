@@ -1,0 +1,24 @@
+body {
+  background: radial-gradient(#ffffff, #e5e5e5);
+}
+
+$font-pink: #e92569;
+
+$font-primary: "Playfair Display", serif;
+$font-secondary: "Lato", sans-serif;
+
+h1 {
+  color: $font-pink;
+  font-family: $font-primary;
+  font-size: 34px;
+}
+
+p {
+  font-family: $font-secondary;
+  font-size: 16px;
+  color: #767676;
+}
+
+.tab-content {
+  background-color: #fff;
+}
