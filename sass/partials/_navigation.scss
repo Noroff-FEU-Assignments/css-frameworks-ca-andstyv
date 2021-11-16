@@ -2,32 +2,60 @@
   background-color: $color-nav;
   font-size: 16px;
 
+  //   &__container {
+  //     margin: 0 !important;
+  //     padding: 0 !important;
+  //     min-width: 100%;
+  //     max-width: 1440px;
+  //   }
+
   &__brand {
     color: $color-font-pink !important;
     font-size: 20px;
     font-family: $font-primary;
     font-weight: 700;
     font-style: italic;
-  }
-  &__link {
-    color: $color-font-black !important;
-
-    &--active {
-      background-color: $color-white !important;
-      border-radius: 3px;
-      padding-top: 1px;
-      padding-bottom: 1px;
-    }
-  }
-  &__search {
-    border: none;
-    border-radius: 4px 0 0 4px;
-    color: $color-font-gray;
+    // padding-left: 3rem;
   }
   &__btn {
     background-color: $color-font-pink;
     color: $color-white;
     border: none;
     border-radius: 0px 4px 4px 0px;
+  }
+  &__link {
+    color: $color-font-black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: #fff;
+      color: red;
+      font-weight: bold;
+      left: 0;
+      width: 100%;
+      height: 2rem;
+      z-index: -1;
+    }
+
+    // &--active {
+    //   margin: 0 -9999rem !important;
+    //   /* add back negative margin value */
+    //   padding: 0.25rem 9999rem !important;
+    //   background: red;
+    // }
+  }
+}
+
+@media (min-width: 992px) {
+  .nav {
+    &__search {
+      border: none;
+      border-radius: 4px 0 0 4px;
+      color: $color-font-gray;
+    }
   }
 }
