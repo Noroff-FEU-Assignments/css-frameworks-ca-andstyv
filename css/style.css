@@ -20,21 +20,6 @@
 
 .nav__link {
   color: #0a0a0a !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  margin-bottom: 20px !important;
-}
-
-.nav__link::after {
-  position: absolute;
-  content: "";
-  background: #fff;
-  color: red;
-  font-weight: bold;
-  left: 0;
-  width: 100%;
-  height: 2rem;
-  z-index: -1;
 }
 
 @media (min-width: 992px) {
@@ -219,5 +204,108 @@ body {
 
 .footer i {
   font-size: 30px !important;
+}
+
+.newstitle {
+  font-family: "Playfair Display", serif;
+  color: #e92569;
+  font-size: 34px;
+}
+
+.prodlinks__col {
+  width: 50%;
+}
+
+.prodlinks__link {
+  color: #e92569;
+  border: 1px solid #e92569;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 !important;
+  padding: 0.5rem 1rem !important;
+  text-decoration: none !important;
+  background: #ffffff;
+}
+
+.prodlinks__link--active {
+  color: #ffffff !important;
+  background: #e92569;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+
+.prodlinks__link--second {
+  border-right: none;
+}
+
+.prodlinks__link--last {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+}
+
+.prodlinks--bottom {
+  padding-bottom: 4rem !important;
+}
+
+.newscard__card {
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media (max-width: 992px) {
+  .newscard--hidden {
+    display: none;
+  }
+}
+
+.newsbody {
+  background: #ffffff !important;
+  font-family: "Lato", sans-serif !important;
+}
+
+.newsbody__title {
+  font-size: 20px !important;
+}
+
+.newsbody__text {
+  font-size: 18px !important;
+  color: #767676;
+}
+
+.newsbody__btn {
+  position: relative;
+  color: #ffffff;
+  background: #767676 !important;
+  font-weight: 400 !important;
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.newsbody__btn::before {
+  content: "";
+  position: absolute;
+  background: #e92569;
+  bottom: 0;
+  left: 0;
+  right: 15%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.1s ease-in;
+  transition: right 0.1s ease-in;
+}
+
+.newsbody__btn:hover::before {
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

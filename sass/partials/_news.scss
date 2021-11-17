@@ -1,0 +1,98 @@
+.newstitle {
+  font-family: $font-primary;
+  color: $color-font-pink;
+  font-size: 34px;
+}
+
+.prodlinks {
+  &__col {
+    width: 50%;
+  }
+  &__link {
+    color: $color-font-pink;
+    border: 1px solid $color-font-pink;
+    font-family: $font-secondary;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    text-decoration: none !important;
+    background: $color-white;
+
+    &--active {
+      color: $color-white !important;
+      background: $color-font-pink;
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+    }
+    &--second {
+      border-right: none;
+    }
+    &--last {
+      border-radius: 0 5px 5px 0;
+      border-left: none;
+    }
+  }
+  &--bottom {
+    padding-bottom: 4rem !important;
+  }
+}
+
+.newscard {
+  &__card {
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+@media (max-width: 992px) {
+  .newscard--hidden {
+    display: none;
+  }
+}
+
+.newsbody {
+  background: $color-white !important;
+  font-family: $font-secondary !important;
+
+  &__title {
+    font-size: 20px !important;
+  }
+
+  &__text {
+    font-size: 18px !important;
+    color: $color-font-gray;
+  }
+
+  &__btn {
+    position: relative;
+    color: $color-white;
+    background: $color-font-gray !important;
+
+    font-weight: 400 !important;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: $color-font-pink;
+      bottom: 0;
+      left: 0;
+      right: 15%;
+      top: 0;
+      z-index: -1;
+      transition: right 0.1s ease-in;
+    }
+    &:hover::before {
+      right: 0;
+    }
+  }
+}
