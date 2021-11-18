@@ -1,13 +1,8 @@
 .nav {
   background-color: $color-nav;
   font-size: 16px;
-
-  //   &__container {
-  //     margin: 0 !important;
-  //     padding: 0 !important;
-  //     min-width: 100%;
-  //     max-width: 1440px;
-  //   }
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.3);
+  font-family: $font-secondary !important;
 
   &__brand {
     color: $color-font-pink !important;
@@ -16,6 +11,9 @@
     font-weight: 700;
     font-style: italic;
     // padding-left: 3rem;
+  }
+  &__toggler {
+    border: none !important;
   }
   &__btn {
     background-color: $color-font-pink;
@@ -26,24 +24,67 @@
   &__link {
     color: $color-font-black !important;
 
-    // &::after {
-    //   position: absolute;
-    //   content: "";
-    //   background: #fff;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 3rem;
-    //   z-index: -1;
-    // }
+    &--active {
+      &::after {
+        position: absolute;
+        content: "";
+        background: #fff;
+        left: 0;
+        bottom: 243px;
+        width: 100%;
+        height: 3rem;
+        z-index: -1;
+      }
+    }
   }
+  &__search {
+    height: 48px;
+  }
+}
+
+.imgCarousel {
+  margin-top: 72px !important;
+}
+
+.collapsed {
+  border: none !important;
 }
 
 @media (min-width: 992px) {
   .nav {
+    position: static !important;
+
+    &__container {
+      align-items: baseline !important;
+    }
+    &__ul {
+      align-items: center;
+    }
+    &__link {
+      &--active {
+        background: $color-white;
+        border-radius: 5px;
+        padding: 0.25rem 1.5rem !important;
+        margin-left: 0 !important;
+        &::after {
+          display: none;
+        }
+      }
+    }
+    &__collapse {
+      margin: 0 !important;
+    }
+    &__form {
+      margin: 0 !important;
+    }
+
     &__search {
       border: none;
       border-radius: 4px 0 0 4px;
       color: $color-font-gray;
     }
+  }
+  .imgCarousel {
+    margin-top: 0 !important;
   }
 }
