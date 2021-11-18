@@ -97,3 +97,19 @@
     }
   }
 }
+
+@media (min-width: 992px) {
+  .newstitle {
+    padding: 0 !important;
+    margin-top: 52px !important;
+  }
+  .prodlinks {
+    padding: 0 !important;
+    &--bottom {
+      margin-bottom: 138px !important;
+    }
+  }
+  .newscontainer {
+    padding: 0 !important;
+  }
+}

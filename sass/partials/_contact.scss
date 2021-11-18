@@ -80,6 +80,7 @@
     display: grid;
     grid-template-columns: 0.9fr 1fr;
     grid-template-rows: auto 1fr;
+    margin-top: 4px;
   }
   .contactinfo {
     grid-column: 2;
