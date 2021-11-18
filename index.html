@@ -91,7 +91,7 @@
         <!-- TABS -->
         <ul class="tabs__nav nav nav-tabs" role="tablist">
           <li class="nav-item">
-            <a id="tab-A" href="#first" class="tabs__link tabs__link--active nav-link active" data-bs-toggle="tab" role="tab">First</a>
+            <a id="tab-A" href="#first" class="tabs__link tabs__link--active nav-link active" data-bs-toggle="tab" role="tab" autofocus>First</a>
           </li>
           <li class="nav-item">
             <a id="tab-B" href="#second" class="tabs__link nav-link" data-bs-toggle="tab" role="tab">Second</a>
@@ -182,11 +182,13 @@
     </section>
 
     <!-- FOOTER  -->
-    <footer class="footer fixed-bottom bg-light p-3">
-      <div class="footcont container d-flex justify-content-between align-items-center">
-        <div class="d-flex gap-2"><i class="fab fa-vimeo-v"></i><i class="fab fa-youtube"></i></div>
-        <div>hello@yay.com</div>
-        <div>Copyright 2020</div>
+    <footer class="footer bg-light fixed-bottom">
+      <div class="footer__container container py-4 px-5">
+        <div class="footer__grid d-grid">
+          <div class="footer__icons d-flex gap-3"><i class="fab fa-vimeo-v"></i><i class="fab fa-youtube"></i></div>
+          <div class="footer__mail">hello@yay.com</div>
+          <div class="footer__copy">Copyright 2020</div>
+        </div>
       </div>
     </footer>
     <script

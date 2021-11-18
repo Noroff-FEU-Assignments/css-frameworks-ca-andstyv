@@ -484,6 +484,10 @@ body {
   .tabs__card {
     background: #ffffff !important;
   }
+  .tabs__link:focus {
+    color: #767676 !important;
+    outline: none !important;
+  }
   .responsive-tabs .nav-tabs {
     display: -webkit-box;
     display: -ms-flexbox;

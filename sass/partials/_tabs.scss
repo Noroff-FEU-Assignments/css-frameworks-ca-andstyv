@@ -88,6 +88,12 @@
     &__card {
       background: $color-white !important;
     }
+    &__link {
+      &:focus {
+        color: $color-font-gray !important;
+        outline: none !important;
+      }
+    }
   }
   .responsive-tabs {
     .nav-tabs {
