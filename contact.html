@@ -17,7 +17,41 @@
     <title>Contact | The YAY Company</title>
   </head>
   <body>
-      <div class="contactgrid container py-4 px-5">
+          <!-- NAVIGATION -->
+    <nav class="nav navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="nav__container container py-2">
+          <a class="nav__brand navbar-brand pe-4" href="#">The YAY Company</a>
+          <button
+            class="nav__toggler navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav__collapse collapse navbar-collapse mt-4" id="navbarSupportedContent">
+            <ul class="nav__ul navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav__link nav-link ms-3" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav__link nav-link ms-3" href="/news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav__link nav__link--third nav-link ms-3" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="nav__form d-flex mt-5 mb-4">
+              <input class="nav__search form-control me-0 border-0" type="search" placeholder="Search" aria-label="Search" />
+              <button class="nav__btn btn btn-outline-success ml-0" type="submit">Go</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="contactgrid container">
       <div class="contactinfo container">
           <div class="contactinfo__flex d-flex gap-4 mb-4">
             <i class=" contactinfo__i fas fa-envelope"></i>
@@ -57,7 +91,7 @@
               <textarea class="form__input form-control" id="message" aria-label="With textarea"></textarea>
             </div>
           </div>
-          <div class="mb-3 form-check d-flex gap-3">
+          <div class="mb-3 form-check d-flex gap-3 align-items-center">
             <input type="checkbox" class="form__check form-check-input" id="checker"  checked/>
             <label class="form__label form__label--check form-check-label" for="checker">Allow us to sell your personal details to whomever we want</label>
           </div>

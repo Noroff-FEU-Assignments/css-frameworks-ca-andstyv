@@ -1,3 +1,6 @@
+.contactgrid {
+  margin-top: 102px;
+}
 .contactinfo {
   &__i {
     color: $color-font-gray !important;
@@ -10,17 +13,26 @@
     font-size: 16px;
   }
 }
+.form-bg-wrapper {
+  margin-bottom: 250px;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 600px;
+    left: 50%;
+    position: absolute;
+    background: $color-nav;
+    transform: translateX(-50%);
+    z-index: -1;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+}
 
 .contact-title {
   font-family: $font-primary;
   color: $color-font-pink;
   font-size: 34px;
-}
-
-.form-bg-wrapper {
-  background: $color-nav;
-  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 250px;
 }
 
 .form {
@@ -66,16 +78,25 @@
 @media (min-width: 992px) {
   .contactgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.9fr 1fr;
     grid-template-rows: auto 1fr;
   }
   .contactinfo {
     grid-column: 2;
     grid-row: 2;
-    margin-left: 4rem;
+    margin-left: 3rem;
   }
   .contacthead {
     grid-column: 1 / 3;
     grid-row: 1;
+    padding-left: 0 !important;
+  }
+  .form-bg-wrapper {
+    background: $color-nav;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 200px;
+    &::before {
+      display: none;
+    }
   }
 }
