@@ -1,8 +1,8 @@
 .nav {
   background-color: #efefef;
   font-size: 16px;
-  -webkit-box-shadow: 1px 1px 200px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 1px 200px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 1px 200px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 200px rgba(0, 0, 0, 0.2);
   font-family: "Lato", sans-serif !important;
 }
 
@@ -73,6 +73,11 @@
 
 .nav__search {
   height: 48px;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .imgCarousel {
@@ -531,8 +536,8 @@ body {
 }
 
 .accordion__btn--second {
-  border-top: 1px solid #e6e6e6 !important;
-  border-bottom: 1px solid #e6e6e6 !important;
+  outline: 1px solid #e6e6e6 !important;
+  outline: 1px solid #e6e6e6 !important;
 }
 
 .accordion__btn::after {
