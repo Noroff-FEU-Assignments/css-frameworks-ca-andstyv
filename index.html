@@ -27,13 +27,13 @@
         <div class="nav__collapse collapse navbar-collapse mt-4" id="navbar">
           <ul class="nav__ul navbar-nav me-auto mb-2 mb-lg-0 gap-3">
             <li class="nav-item">
-              <a class="nav__link nav-link ms-3" aria-current="page" href="./index.html">Home</a>
+              <a class="nav__link nav__link--first nav-link ms-3" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav__link nav-link ms-3" href="/news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav__link nav__link--third nav-link ms-3" href="/contact.html">Contact</a>
+              <a class="nav__link nav-link ms-3" href="/contact.html">Contact</a>
             </li>
           </ul>
           <form class="nav__form d-flex mt-5 mb-4">
@@ -81,58 +81,109 @@
       <!-- MAIN TABS -->
       <div class="tabs container responsive-tabs mt-5">
         <!-- TABS -->
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+        <nav class="tabnav d-none">
+          <div class="tabnav__tabs nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="tabnav__link nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+              First
+            </button>
+            <button class="tabnav__link nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+              Second
+            </button>
+            <button class="tabnav__link nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+              Third
+            </button>
           </div>
         </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">TEXT</div>
-          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        <div class="tabcontent tab-content d-none px-4 py-5" id="nav-tabContent">
+          <div class="tabcontent__pane tab-pane fade show active px-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="tabrow row">
+              <div class="tabrow__col col-3"><img src="./images/tab/tab-1.jpg" alt="" class="img-fluid" /></div>
+              <div class="tabrow__col col-9 d-flex flex-column justify-content-between">
+                <div class="tabrow__text">
+                  Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                  maximus. Sed condimentum mattis rhoncus.
+                </div>
+                <div class="d-flex tabrow__links gap-3 mb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="tabcontent__pane tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+          <div class="tabcontent__pane tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
         </div>
 
         <!-- ACCORDION AND CONTENT -->
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+        <div class="accordion" id="accordion">
+          <div class="accordion__item accordion-item">
+            <h2 class="accordion__header accordion-header" id="headingOne">
+              <button class="accordion__btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">First</button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
-                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+              <div class="accordion__body accordion-body d-flex flex-column align-items-center gap-3">
+                <div class="tabgrid__txt">
+                  <p class="tabgrid__para">
+                    Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                    maximus. Sed condimentum mattis rhoncus.
+                  </p>
+                </div>
+                <div class="tabgrid__img">
+                  <img src="./images/tab/tab-1.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="tabgrid__link">
+                  <div class="tabgrid__share d-flex gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
+          <div class="accordion__item accordion-item">
+            <h2 class="accordion__header accordion-header" id="headingTwo">
+              <button
+                class="accordion__btn accordion__btn--second accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Second
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
-                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+              <div class="accordion__body accordion-body d-flex flex-column align-items-center gap-3">
+                <div class="tabgrid__txt">
+                  <p class="tabgrid__para">
+                    Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                    maximus. Sed condimentum mattis rhoncus.
+                  </p>
+                </div>
+                <div class="tabgrid__img">
+                  <img src="./images/tab/tab-2.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="tabgrid__link">
+                  <div class="tabgrid__share d-flex gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
+          <div class="accordion__item accordion-item">
+            <h2 class="accordion__header accordion-header" id="headingThree">
+              <button class="accordion__btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Third
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
-                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+              <div class="accordion__body accordion-body d-flex flex-column align-items-center gap-3">
+                <div class="tabgrid__txt">
+                  <p class="tabgrid__para">
+                    Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                    maximus. Sed condimentum mattis rhoncus.
+                  </p>
+                </div>
+                <div class="tabgrid__img">
+                  <img src="./images/tab/tab-3.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="tabgrid__link">
+                  <div class="tabgrid__share d-flex gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
+                </div>
               </div>
             </div>
           </div>
