@@ -112,4 +112,13 @@
   .newscontainer {
     padding: 0 !important;
   }
+  .newscard {
+    &__card {
+      border: none !important;
+    }
+    &__img {
+      min-height: 190px;
+      object-fit: cover;
+    }
+  }
 }
