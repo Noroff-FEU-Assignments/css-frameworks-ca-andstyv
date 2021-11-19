@@ -44,28 +44,21 @@
       </div>
     </nav>
     <!-- CAROUSEL -->
-    <div id="carouselExampleIndicators" class="imgCarousel carousel slide">
+    <div id="carouselContainer" class="imgCarousel carousel slide">
       <div class="imgCarousel__indicator carousel-indicators gap-2">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="imgCarousel__btn" aria-label="Slide 1"></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          class="imgCarousel__btn imgCarousel__btn--active active"
-          aria-current="true"
-          aria-label="Slide 2"
-        ></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="imgCarousel__btn" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="0" class="imgCarousel__btn" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="1" class="imgCarousel__btn imgCarousel__btn--active active" aria-current="true" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="2" class="imgCarousel__btn" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item">
-          <img src="./images/carousel/carousel-2.jpg" class="d-block w-100" alt="..." />
+          <img src="./images/carousel/carousel-2.jpg" class="d-block w-100" alt="Green Ray machine" />
         </div>
         <div class="carousel-item active">
-          <img src="./images/carousel/carousel-1.jpg" class="d-block w-100" alt="..." />
+          <img src="./images/carousel/carousel-1.jpg" class="d-block w-100" alt="A bike amongst old TVs" />
         </div>
         <div class="carousel-item">
-          <img src="./images/carousel/carousel-3.jpg" class="d-block w-100" alt="..." />
+          <img src="./images/carousel/carousel-3.jpg" class="d-block w-100" alt="Destroyed TV plastics" />
         </div>
       </div>
     </div>
@@ -97,7 +90,7 @@
         <div class="tabcontent tab-content d-none px-4 py-5" id="nav-tabContent">
           <div class="tabcontent__pane tab-pane fade show active px-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="tabrow row">
-              <div class="tabrow__col col-3"><img src="./images/tab/tab-1.jpg" alt="" class="img-fluid" /></div>
+              <div class="tabrow__col col-3"><img src="./images/tab/tab-1.jpg" alt="CRT TV on stand" class="img-fluid" /></div>
               <div class="tabrow__col col-9 d-flex flex-column justify-content-between">
                 <div class="tabrow__text">
                   Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
@@ -107,8 +100,30 @@
               </div>
             </div>
           </div>
-          <div class="tabcontent__pane tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-          <div class="tabcontent__pane tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          <div class="tabcontent__pane tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="tabrow row">
+              <div class="tabrow__col col-3"><img src="./images/tab/tab-2.jpg" alt="Wall filled with old style photos" class="img-fluid" /></div>
+              <div class="tabrow__col col-9 d-flex flex-column justify-content-between">
+                <div class="tabrow__text">
+                  Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                  maximus. Sed condimentum mattis rhoncus.
+                </div>
+                <div class="d-flex tabrow__links gap-3 mb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="tabcontent__pane tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="tabrow row">
+              <div class="tabrow__col col-3"><img src="./images/tab/tab-3.jpg" alt="Window in rusted wall" class="img-fluid" /></div>
+              <div class="tabrow__col col-9 d-flex flex-column justify-content-between">
+                <div class="tabrow__text">
+                  Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus non
+                  maximus. Sed condimentum mattis rhoncus.
+                </div>
+                <div class="d-flex tabrow__links gap-3 mb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- ACCORDION AND CONTENT -->
@@ -126,7 +141,7 @@
                   </p>
                 </div>
                 <div class="tabgrid__img">
-                  <img src="./images/tab/tab-1.jpg" alt="" class="img-fluid" />
+                  <img src="./images/tab/tab-1.jpg" alt="CRT TV on stand" class="img-fluid" />
                 </div>
                 <div class="tabgrid__link">
                   <div class="tabgrid__share d-flex gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
@@ -156,7 +171,7 @@
                   </p>
                 </div>
                 <div class="tabgrid__img">
-                  <img src="./images/tab/tab-2.jpg" alt="" class="img-fluid" />
+                  <img src="./images/tab/tab-2.jpg" alt="Wall filled with old style photos" class="img-fluid" />
                 </div>
                 <div class="tabgrid__link">
                   <div class="tabgrid__share d-flex gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
@@ -179,7 +194,7 @@
                   </p>
                 </div>
                 <div class="tabgrid__img">
-                  <img src="./images/tab/tab-3.jpg" alt="" class="img-fluid" />
+                  <img src="./images/tab/tab-3.jpg" alt="Window in rusted wall" class="img-fluid" />
                 </div>
                 <div class="tabgrid__link">
                   <div class="tabgrid__share d-flex gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>

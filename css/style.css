@@ -482,6 +482,12 @@ body {
   .form-bg-wrapper::before {
     display: none;
   }
+  .form__input {
+    height: 56px !important;
+  }
+  #message {
+    min-height: 224px;
+  }
 }
 
 .accordion {
