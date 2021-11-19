@@ -16,32 +16,25 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>News | The YAY Company</title>
   </head>
+  <!-- BODY -->
   <body style="min-height: 100vh">
     <!-- NAVIGATION -->
     <nav class="nav navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="nav__container container py-2">
+      <div class="nav__container container py-2 px-4">
         <a class="nav__brand navbar-brand pe-4" href="#">The YAY Company</a>
-        <button
-          class="nav__toggler navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="nav__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="nav__collapse collapse navbar-collapse mt-4" id="navbarSupportedContent">
+        <div class="nav__collapse collapse navbar-collapse mt-4" id="navbar">
           <ul class="nav__ul navbar-nav me-auto mb-2 mb-lg-0 gap-3">
             <li class="nav-item">
-              <a class="nav__link nav-link ms-3" aria-current="page" href="/index.html">Home</a>
+              <a class="nav__link nav-link ms-3" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav__link nav__link--second nav-link ms-3" href="/news.html">News</a>
+              <a class="nav__link nav-link ms-3" href="/news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav__link nav-link ms-3" href="/contact.html">Contact</a>
+              <a class="nav__link nav__link--third nav-link ms-3" href="/contact.html">Contact</a>
             </li>
           </ul>
           <form class="nav__form d-flex mt-5 mb-4">
@@ -51,8 +44,10 @@
         </div>
       </div>
     </nav>
-    <div class="newstitle container px-5 mt-5"><h1>News</h1></div>
-    <div class="prodlinks container px-5 my-5">
+    <!-- MAIN CONTENT  -->
+    <div class="newstitle container px-4 mt-5"><h1>News</h1></div>
+    <!-- NAVIGATORS  -->
+    <div class="prodlinks container px-4 my-5">
       <div class="prodlinks__col d-flex">
         <a class="prodlinks__link prodlinks__link--active" href="#">1</a>
         <a class="prodlinks__link prodlinks__link--second" href="#">2</a>
@@ -60,8 +55,9 @@
         <a class="prodlinks__link prodlinks__link--last" href="#">4</a>
       </div>
     </div>
+    <!-- NEWS CONTAINER  -->
     <section>
-      <div class="newscontainer container px-5">
+      <div class="newscontainer container px-4">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div class="newscard col">
             <div class="newscard__card card h-100">
@@ -146,6 +142,7 @@
         </div>
       </div>
     </section>
+    <!-- NAVIGATORS  -->
     <div class="prodlinks prodlinks--bottom container px-5 my-5">
       <div class="prodlinks__col d-flex">
         <a class="prodlinks__link prodlinks__link--active" href="#">1</a>
@@ -155,7 +152,7 @@
       </div>
     </div>
     <!-- FOOTER  -->
-    <footer class="footer bg-light">
+    <footer class="footer">
       <div class="footer__container container py-4 px-5">
         <div class="footer__grid d-grid">
           <div class="footer__icons d-flex gap-3"><i class="fab fa-vimeo-v"></i><i class="fab fa-youtube"></i></div>

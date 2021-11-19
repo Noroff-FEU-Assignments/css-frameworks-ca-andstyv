@@ -19,29 +19,21 @@
   <body>
     <!-- NAVIGATION -->
     <nav class="nav navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="nav__container container py-2">
+      <div class="nav__container container py-2 px-4">
         <a class="nav__brand navbar-brand pe-4" href="#">The YAY Company</a>
-        <button
-          class="nav__toggler navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="nav__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="nav__collapse collapse navbar-collapse mt-4" id="navbarSupportedContent">
+        <div class="nav__collapse collapse navbar-collapse mt-4" id="navbar">
           <ul class="nav__ul navbar-nav me-auto mb-2 mb-lg-0 gap-3">
             <li class="nav-item">
-              <a class="nav__link nav__link--first nav-link ms-3" aria-current="page" href="#">Home</a>
+              <a class="nav__link nav-link ms-3" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav__link nav-link ms-3" href="/news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav__link nav-link ms-3" href="/contact.html">Contact</a>
+              <a class="nav__link nav__link--third nav-link ms-3" href="/contact.html">Contact</a>
             </li>
           </ul>
           <form class="nav__form d-flex mt-5 mb-4">
@@ -78,7 +70,7 @@
       </div>
     </div>
     <!-- HEADING AND TEXT  -->
-    <section style="min-height: 75vh">
+    <section style="min-height: 75vh" class="px-4">
       <div class="home container my-5">
         <h1 class="home__title py-2">We do YAY things</h1>
         <p class="home__para">
@@ -89,91 +81,58 @@
       <!-- MAIN TABS -->
       <div class="tabs container responsive-tabs mt-5">
         <!-- TABS -->
-        <ul class="tabs__nav nav nav-tabs" role="tablist">
-          <li class="nav-item">
-            <a id="tab-A" href="#first" class="tabs__link tabs__link--active nav-link active" data-bs-toggle="tab" role="tab" autofocus>First</a>
-          </li>
-          <li class="nav-item">
-            <a id="tab-B" href="#second" class="tabs__link nav-link" data-bs-toggle="tab" role="tab">Second</a>
-          </li>
-          <li class="nav-item">
-            <a id="tab-C" href="#third" class="tabs__link nav-link" data-bs-toggle="tab" role="tab">Third</a>
-          </li>
-        </ul>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">TEXT</div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        </div>
+
         <!-- ACCORDION AND CONTENT -->
-        <div class="tabs__content tab-content" id="content" role="tablist">
-          <div id="first" class="tabs__card card tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
-            <div class="tabs__header card-header" role="tab" id="heading-first">
-              <h5 class="tabs__h5 mb-0">
-                <a class="tabs__headlink" data-bs-toggle="collapse" href="#collapse-first" aria-expanded="true" aria-controls="collapse-first">First</a>
-              </h5>
-            </div>
-            <div id="collapse-first" class="show collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-first">
-              <div class="tabs__body card-body">
-                <div class="tabgrid row p-3">
-                  <div class="tabgrid__txt col-12">
-                    <p class="tabgrid__para">
-                      Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus
-                      non maximus. Sed condimentum mattis rhoncus.
-                    </p>
-                  </div>
-                  <div class="tabgrid__img col-12">
-                    <img src="./images/tab/tab-1.jpg" alt="" class="img-fluid" />
-                  </div>
-                  <div class="tabgrid__link col-12 mt-3">
-                    <div class="tabgrid__share d-flex gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
-                  </div>
-                </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
-          <div id="second" class="tabs__card card tab-pane fade" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="tabs__header card-header" role="tab" id="heading-second">
-              <h5 class="tabs__h5 mb-0">
-                <a class="tabs__headlink collapsed" data-bs-toggle="collapse" href="#collapse-second" aria-expanded="false" aria-controls="collapse-second">Second</a>
-              </h5>
-            </div>
-            <div id="collapse-second" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-second">
-              <div class="tabs__body card-body">
-                <div class="tabgrid row p-3">
-                  <div class="tabgrid__txt col-12">
-                    <p class="tabgrid__para">
-                      Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus
-                      non maximus. Sed condimentum mattis rhoncus.
-                    </p>
-                  </div>
-                  <div class="tabgrid__img col-12">
-                    <img src="./images/tab/tab-2.jpg" alt="" class="img-fluid" />
-                  </div>
-                  <div class="tabgrid__link col-12">
-                    <div class="tabgrid__share d-flex gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
-                  </div>
-                </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
-          <div id="third" class="tabs__card card tab-pane fade" role="tabpanel" aria-labelledby="contact-tab">
-            <div class="tabs__header card-header" role="tab" id="heading-third">
-              <h5 class="tabs__h5 mb-0">
-                <a class="tabs__headlink" data-bs-toggle="collapse" href="#collapse-third" aria-expanded="true" aria-controls="collapse-third">Third</a>
-              </h5>
-            </div>
-            <div id="collapse-third" class="collapse" data-bs-parent="#content" role="tabpanel" aria-labelledby="heading-third">
-              <div class="tabs__body card-body">
-                <div class="tabgrid row p-3">
-                  <div class="tabgrid__txt col-12">
-                    <p class="tabgrid__para">
-                      Morbi eget efficitur turpis. Vivamus pellentesque tortor massa, venenatis pharetra leo laoreet a. Nullam non eleifend justo, a ullamcorper turpis. Cras vehicula pharetra lectus
-                      non maximus. Sed condimentum mattis rhoncus.
-                    </p>
-                  </div>
-                  <div class="tabgrid__img col-12">
-                    <img src="./images/tab/tab-3.jpg" alt="" class="img-fluid" />
-                  </div>
-                  <div class="tabgrid__link col-12">
-                    <div class="tabgrid__share d-flex gap-3 pb-2">Share<i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i></div>
-                  </div>
-                </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
@@ -182,7 +141,7 @@
     </section>
 
     <!-- FOOTER  -->
-    <footer class="footer bg-light fixed-bottom">
+    <footer class="footer bg-light">
       <div class="footer__container container py-4 px-5">
         <div class="footer__grid d-grid">
           <div class="footer__icons d-flex gap-3"><i class="fab fa-vimeo-v"></i><i class="fab fa-youtube"></i></div>

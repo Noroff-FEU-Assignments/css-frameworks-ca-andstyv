@@ -15,6 +15,10 @@
   &__toggler {
     border: none !important;
   }
+
+  &__collapse {
+    min-height: 300px;
+  }
   &__btn {
     background-color: $color-font-pink;
     color: $color-white;
@@ -46,18 +50,18 @@
     }
     &--first {
       &::after {
-        bottom: 243px;
+        bottom: 270px;
       }
     }
 
     &--second {
       &::after {
-        bottom: 187px;
+        bottom: 213px;
       }
     }
     &--third {
       &::after {
-        bottom: 129px;
+        bottom: 158px;
       }
     }
   }
@@ -102,6 +106,7 @@
     &__collapse {
       margin: 0 !important;
       align-items: center;
+      min-height: auto !important;
     }
     &__form {
       margin: 0 !important;

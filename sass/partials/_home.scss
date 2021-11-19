@@ -2,11 +2,13 @@ body {
   background: radial-gradient(#ffffff, #e5e5e5);
 }
 
-.html,
-.body {
-  overflow-x: hidden;
-}
+// .html,
+// .body {
+//   overflow-x: hidden;
+// }
 .home {
+  padding-left: 0;
+  padding-right: 0;
   &__title {
     color: $color-font-pink;
     font-family: $font-primary;
@@ -35,6 +37,12 @@ body {
   }
 }
 
-.card-body {
-  background: radial-gradient(#ffffff, #e5e5e5);
+@media (max-width: 992px) {
+  .home {
+    margin-top: 0.75rem !important ;
+  }
+  .carousel-item img {
+    min-height: 287px !important;
+    object-fit: cover !important;
+  }
 }
