@@ -228,8 +228,7 @@ body {
 
 @media (min-width: 992px) {
   .footer__container {
-    padding-bottom: 0.5rem !important;
-    padding-top: 0.5rem !important;
+    padding: 0.5rem 0 !important;
   }
   .footer__grid {
     -ms-grid-columns: 1fr 1fr 1fr;

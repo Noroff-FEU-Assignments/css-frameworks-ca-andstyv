@@ -26,8 +26,7 @@
 
   @media (min-width: 992px) {
     &__container {
-      padding-bottom: 0.5rem !important;
-      padding-top: 0.5rem !important;
+      padding: 0.5rem 0 !important;
     }
     &__grid {
       grid-template-columns: 1fr 1fr 1fr;
