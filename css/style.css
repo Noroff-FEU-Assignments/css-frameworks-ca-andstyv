@@ -163,7 +163,7 @@ body {
 }
 
 .imgCarousel {
-  margin-top: 72px !important;
+  margin-top: 0px;
 }
 
 .imgCarousel__btn {
@@ -179,6 +179,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  .imgCarousel {
+    margin-top: 72px !important;
+  }
   .home {
     margin-top: 0.75rem !important;
   }
@@ -381,6 +384,7 @@ body {
 
 .contactgrid {
   margin-top: 102px;
+  min-height: 100vh;
 }
 
 .contactgrid .contactinfo__i {
@@ -403,6 +407,7 @@ body {
 
 .form-bg-wrapper {
   margin-bottom: 250px;
+  max-height: 900px;
 }
 
 .form-bg-wrapper::before {

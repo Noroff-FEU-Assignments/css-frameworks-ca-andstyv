@@ -1,6 +1,7 @@
 body {
   background: $color-bg;
 }
+
 .carousel-img {
   max-width: 1320px;
   margin: 0 auto;
@@ -22,7 +23,7 @@ body {
 }
 
 .imgCarousel {
-  margin-top: 72px !important;
+  margin-top: 0px;
   &__btn {
     width: 30px !important;
     height: 30px !important;
@@ -38,6 +39,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  .imgCarousel {
+    margin-top: 72px !important;
+  }
   .home {
     margin-top: 0.75rem !important ;
   }
