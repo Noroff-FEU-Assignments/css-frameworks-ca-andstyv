@@ -10,7 +10,6 @@
     font-family: $font-primary;
     font-weight: 700;
     font-style: italic;
-    // padding-left: 3rem;
   }
   &__toggler {
     border: none !important;
@@ -73,10 +72,6 @@
   &:focus {
     box-shadow: none;
   }
-}
-
-.imgCarousel {
-  margin-top: 72px !important;
 }
 
 .collapsed {

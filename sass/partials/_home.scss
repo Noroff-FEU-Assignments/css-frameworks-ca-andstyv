@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(#ffffff, #e5e5e5);
+  background: $color-bg;
 }
 .carousel-img {
   max-width: 1320px;
@@ -22,6 +22,7 @@ body {
 }
 
 .imgCarousel {
+  margin-top: 72px !important;
   &__btn {
     width: 30px !important;
     height: 30px !important;
